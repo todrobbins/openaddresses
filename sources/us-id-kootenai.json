@@ -1,15 +1,15 @@
 {
     "coverage": {
         "US Census": {
-            "geoid": "1664810",
-            "name": "City of Post Falls",
+            "geoid": "16055",
+            "name": "Kootenai County",
             "state": "Idaho"
         },
         "country": "us",
         "state": "id",
-        "city": "Post Falls"
+        "county": "Kootenai"
     },
-    "data": "http://gis.postfallsidaho.org/arcgis/rest/services/GIS2/Addresses/MapServer/0",
+    "data": "http://kcearth.kcgov.us/ws/rest/services/Dispatch_Dynamic_KE/MapServer/33",
     "type": "ESRI",
     "conform": {
         "type": "csv",
@@ -18,7 +18,6 @@
         "number": "HOUSE_NUM",
         "merge": ["PRE_DIR", "ST_NAME", "ST_TYPE"],
         "street": "auto_street",
-        "city": "CITY",
-        "postcode": "ZIPCODE"
+        "city": "CITY"
     }
 }

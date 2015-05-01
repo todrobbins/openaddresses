@@ -1,24 +1,24 @@
 {
     "coverage": {
         "US Census": {
-            "geoid": "1664810",
-            "name": "City of Post Falls",
+            "geoid": "16017",
+            "name": "Bonner County",
             "state": "Idaho"
         },
         "country": "us",
         "state": "id",
-        "city": "Post Falls"
+        "city": "Bonner"
     },
-    "data": "http://gis.postfallsidaho.org/arcgis/rest/services/GIS2/Addresses/MapServer/0",
+    "data": "http://maps.bonnercounty.us/bcgis/rest/services/Apps/RNB/MapServer/0",
     "type": "ESRI",
     "conform": {
         "type": "csv",
+        "merge": ["PRE_DIR", "ST_NAME", "ST_TYPE", "POST_DIR"],
         "lon": "OA:x",
         "lat": "OA:y",
-        "number": "HOUSE_NUM",
-        "merge": ["PRE_DIR", "ST_NAME", "ST_TYPE"],
+        "number": "FINAL_ADD",
         "street": "auto_street",
-        "city": "CITY",
+        "city": "COMMUNITY",
         "postcode": "ZIPCODE"
     }
 }
